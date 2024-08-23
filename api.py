@@ -14,5 +14,3 @@ def api_search(query):
     data["items"] = filtered_items
 
     return data["items"]
-
-print(json.dumps(api_search("test"), indent=4))
