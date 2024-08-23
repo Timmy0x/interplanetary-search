@@ -1,0 +1,61 @@
+<html lang="en">
+    <head>
+        <title>{{ query }} - IPFS Search</title>
+
+        {{ header | safe }}
+
+        <link rel="stylesheet" href="/styles/search.css">
+    </head>
+
+    <body>
+        {{ nav | safe }}
+
+        <div id="main">
+            <div id="input">
+                <form action="/search" method="GET">
+                    <input placeholder="Search the web..." name="q" value="{{ query }}">
+                </form>
+            </div>
+            
+            <div id="results">
+                {% for result in results %}
+                <div class="search-result">
+                    <div class="result-url">{{ result.displayLink }}</div>
+                    <h3 class="result-title"><a href="{{ result.link }}">{{ result.title }}</a></h3>
+                    <div class="result-snippet">{{ result.snippet }}</div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div id="ads">
+                <!-- EthereumAds -->
+                <div id="EthereumAds-default"></div>
+                <script src="https://ethereumads.com/adviewer.js">
+                </script>
+                <script>
+                    EthereumAds.initAdSlot({
+                        acceptedCurrencies: ["ALL"], // option ALL for all whitelisted tokens, ETH for Ethereum, DAI for DAI Stablecoin
+                        //validatorEndpoint:"", // optional custom validator
+                        mediaType: "image_728x90",
+                        fallback: "default", // default, none, custom url
+                        slot: "default",
+                        address: "0x2DBA91c342A7D8dB0F957d03Aa263d26E47a88F9",
+                        platform: "",
+                        affiliate: "",
+                        keywords:"", //comma separatedy
+                        adult: false,
+                        version: "1.00"
+                    });
+                    /*
+                        for responsive ads add and adjust this according to your needs:
+                        responsive: [
+                            { mediaType: "image_728x90", minWidth: 728 },
+                            { mediaType: "image_300x600" }
+                        ],
+                    */
+                </script>
+                <!-- /EthereumAds -->
+            </div>
+        </div>
+    </body>
+</html>

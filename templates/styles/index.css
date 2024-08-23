@@ -1,0 +1,47 @@
+
+/********** Search *********/
+#search {
+    grid-row: 3 / span 10;
+    grid-column: 3 / span 6;
+}
+
+/***** Image *****/
+#search-image .logo {
+    width: 40%;
+    height: auto;
+
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+/***** Form *****/
+#search-form {
+    width: 70%;
+
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 20px;
+}
+
+#search-form input {
+    width: calc(100% - 45px);
+
+    padding: 20px;
+
+    font-size: 1.25rem;
+
+    border: 1px lightgrey solid;
+    border-radius: 20px;
+
+    outline: none;
+}
+
+/***** Info *****/
+#search-info {
+    width: 70%;
+
+    margin-left: 15%;
+    margin-right: 15%;
+
+    font-size: 1.2rem;
+}

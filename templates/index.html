@@ -1,0 +1,31 @@
+<html lang="en">
+    <head>
+        <title>IPFS Search</title>
+
+        {{ header | safe }}
+
+        <link rel="stylesheet" href="/styles/index.css">
+    </head>
+
+    <body>
+        {{ nav | safe}}
+
+        <div id="main">
+            <div id="search">
+                <div id="search-image">
+                    <img src="https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/modified/b18391c7-7b6d-4a42-a725-bedf08a17289.png" alt="IPFS Search" class="logo">
+                </div>
+
+                <div id="search-form">
+                    <form action="/search" method="GET">
+                        <input placeholder="Search the web..." name="q">
+                    </form>
+                </div>
+
+                <div id="search-info">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

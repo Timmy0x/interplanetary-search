@@ -1,0 +1,80 @@
+
+/********** Input *********/
+#input {
+    grid-row: 1;
+    grid-column: 2 / span 5;
+
+    margin-top: 15px;
+}
+
+#input input {
+    width: calc(100% - 45px);
+
+    padding: 20px;
+
+    font-size: 1.25rem;
+
+    border: 1px lightgrey solid;
+    border-radius: 20px;
+
+    outline: none;
+}
+
+/********** Results *********/
+#results {
+    grid-row: 2 / span 9;
+    grid-column: 2 / span 5;
+
+    overflow: scroll;
+
+    padding-top: 30px;
+}
+
+#results::-webkit-scrollbar {
+    display: none;
+}
+
+.search-result {
+    margin-bottom: 25px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.result-url {
+    color: #006621;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.result-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.result-title a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+.result-title a:hover {
+    text-decoration: underline;
+}
+
+.result-snippet {
+    color: #545454;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+/********** Ads *********/
+#ads {
+    grid-row: 1 / span 10;
+    grid-column: 8 / span 3;
+
+    background-color: white;
+
+    overflow: scroll;
+
+    border-left: 1px lightgrey solid;
+}
